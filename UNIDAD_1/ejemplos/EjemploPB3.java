@@ -12,14 +12,12 @@ public class EjemploPB3 {
 	
 	 public static void main(String[] args) {
 
-	      // create a new list of arguments for our process
+	      //  Crear una lista de argumentos del proceso
 	      String[] list = {"featherpad", "/home/lubuntu/Desktop/test.txt"};
 
-	      // create the process builder
 	      ProcessBuilder pb = new ProcessBuilder(list);
 	      try {
-
-	        //pb= pb.redirectOutput(ProcessBuilder.Redirect.from(new File("/home/lubuntu/Desktop/")));
+              
 	        pb.start();
 	      
 	      } catch (IOException ex) {
