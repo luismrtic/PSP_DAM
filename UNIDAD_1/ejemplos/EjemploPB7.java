@@ -2,7 +2,7 @@ package ejemplos;
 
 import java.util.concurrent.CompletableFuture;
 
-public class EjemploPB13 {
+public class EjemploPB7 {
 
 	
 		  public static void main(String[] args) throws Exception {
@@ -26,7 +26,6 @@ public class EjemploPB13 {
 
 		      System.out.println("-- Esperando a su destrucción --");
 		      processHandle.destroy();
-		      //better use onExit to know when process exits (destroy() may not kill the process immediately)
 		      //La mejor opcion para saber si un proceso ha terminado es onExit
 		      //ya que destroy() no podría matar el proceso inmediatamente
 		      CompletableFuture<ProcessHandle> future = processHandle.onExit();
